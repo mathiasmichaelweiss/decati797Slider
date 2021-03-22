@@ -1,0 +1,77 @@
+@import keyframes
+
+*
+    margin: 0
+body
+    font-family: 'Lato', sans-serif
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%)
+    .container
+        max-width: 100%
+        height: 100vh
+        margin: 0 auto
+        position: relative
+        overflow: hidden
+        .logo
+            text-align: center
+            width: 100%
+            margin: 1.5rem 0 0rem 0
+            .logo-img
+                margin-bottom: 1.5rem
+        .model
+            width: 100%
+            text-align: center
+            font-weight: 900
+            font-size: 190px
+            color: #ffffff
+            text-shadow: 0px 4px 32px rgba(0, 0, 0, 0.6)
+        .wrapper
+            display: flex
+            flex-direction: row
+            width: 100%
+            overflow: hidden
+            position: absolute
+            top: 14.5rem
+            .ducati
+                position: relative
+                left: 50%
+                transform: translate(-25%)
+                width: 100%
+                height: 600px
+                background-image: url(/img/red_ducati.png)
+                background-size: 50%
+                background-repeat: no-repeat
+            .drive
+                transition: left .5s ease-in
+                left: 140rem
+            .drive2
+                left: -140rem
+            .drive3
+                transition: left 1s ease-out
+                left: 4.2rem
+        .colors
+            position: absolute
+            display: flex
+            justify-content: center
+            bottom: -2vw
+            width: 100%
+            margin-bottom: 4vw
+            .color
+                width: 4vw
+                height: 4vw
+                margin-right: 70px
+                border-radius: 20%
+                filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.15))
+                cursor: pointer
+                transition: transform .5s
+                border: none
+                outline: none
+                &:last-child
+                    margin-right: 0
+            .active
+                transform: scale(1.2)
+            .red
+                background: #DF1F26
+            .black
+                background: #141414
+            .white
+                background: #E4E4E4
