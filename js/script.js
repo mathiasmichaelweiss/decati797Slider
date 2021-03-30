@@ -41,11 +41,11 @@ btns.forEach(btn => {
       bike.classList.add("drive");
       const loadTime = window.setTimeout(() => {
         if (e.target.classList.contains("black")) {
-          changeBike("url(/img/black_ducati.png)");
+          changeBike("url(img/black_ducati.png)");
         } else if (e.target.classList.contains("red")) {
-          changeBike("url(/img/red_ducati.png)");
+          changeBike("url(img/red_ducati.png)");
         } else if (e.target.classList.contains("white")) {
-          changeBike("url(/img/white_ducati.png)");
+          changeBike("url(img/white_ducati.png)");
         }
       }, 500);
     }
